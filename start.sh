@@ -65,7 +65,7 @@ $SCRAMBLE_LINE" > server.conf
         set +x
 	echo "client
 dev tun
-proto tcp
+proto udp
 redirect-gateway def1 bypass-dhcp
 dhcp-option DNS 128.52.130.209
 dhcp-option DNS 169.239.202.202
