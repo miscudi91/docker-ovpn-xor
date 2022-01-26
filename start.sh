@@ -71,7 +71,7 @@ dhcp-option DNS 128.52.130.209
 dhcp-option DNS 169.239.202.202
 sndbuf 0
 rcvbuf 0
-remote $PUBLIC_ADDRESS ${PUBLIC_PORT:-1194}
+remote $PUBLIC_ADDRESS ${PUBLIC_PORT:-443}
 resolv-retry infinite
 nobind
 persist-key
