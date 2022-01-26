@@ -8,9 +8,9 @@ services:
       - 'NET_ADMIN'
     restart: 'always'
     ports:
-      - '1194:1194/tcp' # outer:inner
+      - '443:443/udp' # outer:inner
     environment:
       - 'NUM_CLIENT_CONFIGS=25'
-      - 'SCRAMBLE=0'
+      - 'SCRAMBLE=1'
       - 'PUBLIC_ADDRESS=' # leave blank to automatically get public IPv4 address
-      - 'PUBLIC_PORT=1194'
+      - 'PUBLIC_PORT=443'
