@@ -28,8 +28,8 @@ if [ ! -f /config/server.conf ]; then
         SCRAMBLE_LINE="scramble xormask $(shuf -e -n1 {0..9} {a..z} {A..Z})"
     fi
     set +x
-    echo "port 1194
-proto tcp
+    echo "port 443
+proto udp
 sndbuf 0
 rcvbuf 0
 dev tun
