@@ -1,5 +1,5 @@
 FROM archlinux/base:latest
-EXPOSE 1194/tcp
+EXPOSE 443/гвз
 # update all packages because if some libraries are outdated,
 # programs that expect the newest version of the library might not work
 RUN ["pacman", "-Syu", "--needed", "--noconfirm", "base-devel", "git", "easy-rsa"]
